@@ -1,18 +1,21 @@
 package Reto;
 
 public class Funciones1 {
-
-	public static double millas(double a, double b) {
+/* Introducimos kilometros y lo dividimos sobre un valor fijo para obtener las millas*/
+	public static double kilometrosmillas(double a) {
 		
-		return a*b;
+		return a/1.609;
 	}
-	public static double kilometros(double a, double b) {
-		return a*b;
+	/*Introducimos las millas y lo multiplica sobre un valor fijo para obtener los kilometros aproximados */
+	public static double millaskilometros(double a) {
+		return a*1.609;
 	}
-	public static double libras(double a, double b) {
-		return a*b;
+	/* Introducimos los kilogramos y lo multiplica sobre un valor fijo para obtener las libras*/
+	public static double kilogramoslibras(double a) {
+		return a*2.205;
 	}
-	public static double kilogramos(double a,double b) {
-		return a*b;
+	/* Introducimos las libras y lo dividimos sobre un valor fijo para obtener los kilogramos*/
+	public static double libraskilogramos(double a) {
+		return a/2.205;
 	}
 }

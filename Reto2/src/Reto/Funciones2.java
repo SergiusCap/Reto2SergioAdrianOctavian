@@ -12,7 +12,7 @@ public class Funciones2 {
 	
 	//Funcion pasar grados Fahrenheit a celsius 
 	public static double  FahrenheitCelsius(double n1) {
-		return( n1 / 1.8)-32;
+		return( n1 - 32)*5/9;
 				
 	}
 	
