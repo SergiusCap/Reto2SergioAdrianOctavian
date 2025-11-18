@@ -30,15 +30,15 @@ public class Funciones2 {
 
 	public static void temperatura() {
 		Scanner sc = new Scanner(System.in);
-		int menuLongitud = 0;
+		int menuTemperatura = 0;
 		do {
 			System.out.println("Selecciona la conversación de Temperatura: ");
 			System.out.println("1. De Celsius a Fahrenheit");
 			System.out.println("2. De Fahrenheit a Celsius");
 			System.out.println("0. Salir");
 			String menutexto = sc.nextLine();
-			menuLongitud = Integer.parseInt(menutexto);
-			switch (menuLongitud) {
+			menuTemperatura = Integer.parseInt(menutexto);
+			switch (menuTemperatura) {
 			case 1:
 				System.out.println("Introduce los grados Celsius: ");
 				double celsius = Double.parseDouble(sc.nextLine());
@@ -55,21 +55,21 @@ public class Funciones2 {
 				System.out.println("Opción no valida");
 				break;
 			}
-		} while (menuLongitud != 0);
+		} while (menuTemperatura != 0);
 		
 	}
 
 	public static void volumen() {
 		Scanner sc = new Scanner(System.in);
-		int menuLongitud = 0;
+		int menuVolumen = 0;
 		do {
 			System.out.println("Selecciona la conversación de Volumen: ");
 			System.out.println("1. De Litros a Galones");
 			System.out.println("2. De Galones a litros");
 			System.out.println("0. Salir");
 			String menutexto = sc.nextLine();
-			menuLongitud = Integer.parseInt(menutexto);
-			switch (menuLongitud) {
+			menuVolumen = Integer.parseInt(menutexto);
+			switch (menuVolumen) {
 			case 1:
 				System.out.println("Introduce los Litros: ");
 				double litros = Double.parseDouble(sc.nextLine());
@@ -87,7 +87,7 @@ public class Funciones2 {
 				System.out.println("Opción no valida");
 				break;
 			}
-		} while (menuLongitud != 0);
+		} while (menuVolumen != 0);
 		
 	}
 

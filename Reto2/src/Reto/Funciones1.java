@@ -70,7 +70,7 @@ public class Funciones1 {
 
 	public static void peso() {
 		Scanner sc = new Scanner(System.in);
-		int menuLongitud = 0;
+		int menuPeso = 0;
 
 		do {
 
@@ -79,8 +79,8 @@ public class Funciones1 {
 			System.out.println("2. Kilogramos a libras");
 			System.out.println("0. Salir");
 			String menutexto = sc.nextLine();
-			menuLongitud = Integer.parseInt(menutexto);
-			switch (menuLongitud) {
+			menuPeso = Integer.parseInt(menutexto);
+			switch (menuPeso) {
 			case 1:
 				System.out.println("Introduce las libras: ");
 				double libras = Double.parseDouble(sc.nextLine());
@@ -97,7 +97,7 @@ public class Funciones1 {
 				System.out.println("Opción no valida");
 				break;
 			}
-		} while (menuLongitud != 0);
+		} while (menuPeso != 0);
 
 	}
 
